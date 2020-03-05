@@ -6,23 +6,13 @@ spring:
       max-request-size: 130720MB
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:oracle:thin:@//52.87.1.4:1521/dbpres
-    username: DEVYHS
-    password: 'Ax440tzBkV64'
-    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:mysql://localhost:80/formulario
+    username: root
+    password: ''
+    driver-class-name: com.mysql.jdbc.Driver
     hikari:
       minimum-idle: 1
       maximum-pool-size: 2
-  mail:
-    host: secure.emailsrvr.com
-    port: 465
-    username: ptms@yhs.mx
-    password: LHZ8eWl1H07Q
-    protocol: smtps
-    defaultEncoding: UTF-8
-    from: YHS <ptms@yhs.mx>
-    errorsTo: ptms@yhs.mx
-    toDocter: ptms@yhs.mx
   jackson:
     mapper:
       default_view_inclusion: true
@@ -37,10 +27,3 @@ eureka:
       defaultZone: http://127.0.0.1:8761/eureka/
 mybatis:
   config-location: mybatis-config.xml  
-security:
-  tokens: YYRUZJSRJ91Z0XM3,FENDF5EXC5NYVRZC
-logging:
-    level:
-      root: info
-    pattern:
-        console: "%d{yyyy-MM-dd HH:mm} %-5level %logger{36}:%L --> %msg%n"   
