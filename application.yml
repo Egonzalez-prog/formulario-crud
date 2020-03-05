@@ -6,7 +6,7 @@ spring:
       max-request-size: 130720MB
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/formulario
+    url: jdbc:mysql://localhost:80/formulario
     username: root
     password: ''
     driver-class-name: com.mysql.jdbc.Driver
