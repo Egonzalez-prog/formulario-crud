@@ -2,7 +2,7 @@ spring:
   profiles: dev
 
 server:
-  port: 9000
+  port: 8322
 
 zuul:
   sensitive-headers: Cookie,Set-Cookie
